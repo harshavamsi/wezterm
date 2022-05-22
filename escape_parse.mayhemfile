@@ -1,0 +1,5 @@
+project: wezterm
+target: escape_parse
+
+cmds:
+  - cmd: /escape_parse
