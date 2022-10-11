@@ -275,7 +275,7 @@ These are often compatible with other Debian style systems; if you don't find on
 that exactly matches your system you can try installing one from an older version
 of your distribution, or use one of the Debian packages linked below.  Failing that,
 you can try the AppImage download which should work on most Linux systems.</p>
-<table><thead><tr><th>Distro</th><th>Stable</th><th>Nightly</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Distro</th><th>Stable</th><th>Nightly</th></tr></thead><tbody>
 <tr><td>Ubuntu18</td><td><a href="https://github.com/wez/wezterm/releases/download/20220905-102802-7d4b8249/wezterm-20220905-102802-7d4b8249.Ubuntu18.04.deb">wezterm-20220905-102802-7d4b8249.Ubuntu18.04.deb</a></td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly.Ubuntu18.04.deb">wezterm-nightly.Ubuntu18.04.deb</a></td></tr>
 <tr><td>Ubuntu20</td><td><a href="https://github.com/wez/wezterm/releases/download/20220905-102802-7d4b8249/wezterm-20220905-102802-7d4b8249.Ubuntu20.04.deb">wezterm-20220905-102802-7d4b8249.Ubuntu20.04.deb</a></td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly.Ubuntu20.04.deb">wezterm-nightly.Ubuntu20.04.deb</a></td></tr>
 <tr><td>Ubuntu22</td><td>Nightly builds only</td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly.Ubuntu22.04.deb">wezterm-nightly.Ubuntu22.04.deb</a></td></tr>
@@ -283,6 +283,7 @@ you can try the AppImage download which should work on most Linux systems.</p>
 <tr><td>Debian10</td><td><a href="https://github.com/wez/wezterm/releases/download/20220905-102802-7d4b8249/wezterm-20220905-102802-7d4b8249.Debian10.deb">wezterm-20220905-102802-7d4b8249.Debian10.deb</a></td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly.Debian10.deb">wezterm-nightly.Debian10.deb</a></td></tr>
 <tr><td>Debian11</td><td><a href="https://github.com/wez/wezterm/releases/download/20220905-102802-7d4b8249/wezterm-20220905-102802-7d4b8249.Debian11.deb">wezterm-20220905-102802-7d4b8249.Debian11.deb</a></td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly.Debian11.deb">wezterm-nightly.Debian11.deb</a></td></tr>
 </tbody></table>
+</div>
 <p>To download and install from the CLI, you can use something like this, which
 shows how to install the Ubuntu 16 package:</p>
 <pre><code class="language-bash">curl -LO https://github.com/wez/wezterm/releases/download/20220905-102802-7d4b8249/wezterm-20220905-102802-7d4b8249.Ubuntu20.04.deb
@@ -297,7 +298,7 @@ sudo apt install -y ./wezterm-20220905-102802-7d4b8249.Ubuntu20.04.deb
 These are likely compatible with other rpm-based distributions.
 Alternatively, you can try the AppImage download with should work
 on most Linux systems.</p>
-<table><thead><tr><th>Distro</th><th>Stable</th><th>Nightly</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Distro</th><th>Stable</th><th>Nightly</th></tr></thead><tbody>
 <tr><td>CentOS7</td><td>Nightly builds only</td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-centos7.rpm">wezterm-nightly-centos7.rpm</a></td></tr>
 <tr><td>CentOS8</td><td>[{{ centos8_rpm_stable_asset }}]({{ centos8_rpm_stable }})</td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-centos8.rpm">wezterm-nightly-centos8.rpm</a></td></tr>
 <tr><td>CentOS9</td><td>[{{ centos9_rpm_stable_asset }}]({{ centos9_rpm_stable }})</td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-centos9.rpm">wezterm-nightly-centos9.rpm</a></td></tr>
@@ -308,6 +309,7 @@ on most Linux systems.</p>
 <tr><td>openSUSE Leap</td><td>Nighty builds only</td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-opensuse_leap.rpm">wezterm-nightly-opensuse_leap.rpm</a></td></tr>
 <tr><td>openSUSE Tumbleweed</td><td>Nighty builds only</td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-opensuse_tumbleweed.rpm">wezterm-nightly-opensuse_tumbleweed.rpm</a></td></tr>
 </tbody></table>
+</div>
 <p>To download and install from the CLI you can use something like this, which
 shows how to install the Fedora 35 package:</p>
 <pre><code class="language-bash">sudo dnf install -y {{ fedora35_rpm_stable }}
@@ -327,18 +329,20 @@ zypper install wezterm
 <p>WezTerm is available in the <a href="https://archlinux.org/packages/community/x86_64/wezterm/">Community repository</a>.</p>
 <p>The version available in the community repository may lag behind the latest wezterm release, so you may
 wish to use one of these AUR options:</p>
-<table><thead><tr><th>What</th><th>Where</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>What</th><th>Where</th></tr></thead><tbody>
 <tr><td>Nightly Binaries</td><td><a href="https://aur.archlinux.org/packages/wezterm-nightly-bin/">https://aur.archlinux.org/packages/wezterm-nightly-bin/</a></td></tr>
 <tr><td>Build from source</td><td><a href="https://aur.archlinux.org/packages/wezterm-git/">https://aur.archlinux.org/packages/wezterm-git/</a></td></tr>
 </tbody></table>
+</div>
 <h2 id="alpine-linux"><a class="header" href="#alpine-linux">Alpine Linux</a></h2>
 <p>APKs are built out from the <code>main</code> branch.</p>
-<table><thead><tr><th>Version</th><th>Stable</th><th>Nightly</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Version</th><th>Stable</th><th>Nightly</th></tr></thead><tbody>
 <tr><td>3.12</td><td></td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-alpine3.12.apk.sha256">wezterm-nightly-alpine3.12.apk.sha256</a></td></tr>
 <tr><td>3.13</td><td></td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-alpine3.13.apk.sha256">wezterm-nightly-alpine3.13.apk.sha256</a></td></tr>
 <tr><td>3.14</td><td></td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-alpine3.14.apk.sha256">wezterm-nightly-alpine3.14.apk.sha256</a></td></tr>
 <tr><td>3.15</td><td></td><td><a href="https://github.com/wez/wezterm/releases/download/nightly/wezterm-nightly-alpine3.15.apk.sha256">wezterm-nightly-alpine3.15.apk.sha256</a></td></tr>
 </tbody></table>
+</div>
 <h2 id="linuxbrew-tap"><a class="header" href="#linuxbrew-tap">Linuxbrew Tap</a></h2>
 <p>If you are a <a href="https://docs.brew.sh/Homebrew-on-Linux">Linuxbrew</a> user, you can install
 wezterm from our tap:</p>
@@ -2260,7 +2264,7 @@ of previously activated key assignments, making it a bit easier to compose key
 assignments.</p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="default-shortcut--key-binding-assignments"><a class="header" href="#default-shortcut--key-binding-assignments">Default Shortcut / Key Binding Assignments</a></h2>
 <p>The default key assignments are:</p>
-<table><thead><tr><th>Modifiers</th><th>Key</th><th>Action</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Modifiers</th><th>Key</th><th>Action</th></tr></thead><tbody>
 <tr><td><code>SUPER</code></td><td><code>c</code></td><td><code>CopyTo=&quot;Clipboard&quot;</code></td></tr>
 <tr><td><code>SUPER</code></td><td><code>v</code></td><td><code>PasteFrom=&quot;Clipboard&quot;</code></td></tr>
 <tr><td><code>CTRL+SHIFT</code></td><td><code>c</code></td><td><code>CopyTo=&quot;Clipboard&quot;</code></td></tr>
@@ -2334,6 +2338,7 @@ assignments.</p>
 <tr><td><code>CTRL+SHIFT</code></td><td><code>DownArrow</code></td><td><code>ActivatePaneDirection=&quot;Down&quot;</code></td></tr>
 <tr><td><code>CTRL+SHIFT</code></td><td><code>Z</code></td><td><code>TogglePaneZoomState</code></td></tr>
 </tbody></table>
+</div>
 <p>If you don't want the default assignments to be registered, you can
 disable all of them with this configuration; if you chose to do this,
 you must explicitly register every binding.</p>
@@ -2362,7 +2367,7 @@ quick consecutive press.  <code>Triple Left Up</code> matches the subsequent rel
 of that triple click, so for a triple click both
 <code>SelectTextAtMouseCursor=&quot;Line&quot;</code> and <code>CompleteSelection</code> will be triggered in
 that order.</p>
-<table><thead><tr><th>Event</th><th>Modifiers</th><th>Action</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Event</th><th>Modifiers</th><th>Action</th></tr></thead><tbody>
 <tr><td>Triple Left Down</td><td><code>NONE</code></td><td><code>SelectTextAtMouseCursor=&quot;Line&quot;</code></td></tr>
 <tr><td>Double Left Down</td><td><code>NONE</code></td><td><code>SelectTextAtMouseCursor=&quot;Word&quot;</code></td></tr>
 <tr><td>Single Left Down</td><td><code>NONE</code></td><td><code>SelectTextAtMouseCursor=&quot;Cell&quot;</code></td></tr>
@@ -2383,6 +2388,7 @@ that order.</p>
 <tr><td>Single Left Drag</td><td><code>SUPER</code></td><td><code>StartWindowDrag</code> (<em>since 20210314-114017-04b7cedd</em>)</td></tr>
 <tr><td>Single Left Drag</td><td><code>CTRL+SHIFT</code></td><td><code>StartWindowDrag</code> (<em>since 20210314-114017-04b7cedd</em>)</td></tr>
 </tbody></table>
+</div>
 <p>If you don't want the default assignments to be registered, you can
 disable all of them with this configuration; if you chose to do this,
 you must explicitly register every binding.</p>
@@ -2439,11 +2445,12 @@ with <code>streak=2</code> is generated.  When the mouse button is released an <
 with <code>streak=2</code> is generated.</p>
 <p>The mouse event recognizer supports an arbitrary click streak, so if
 you wanted quadruple-click bindings you can specify <code>streak=4</code>.</p>
-<table><thead><tr><th>Event</th><th>Lua Representation</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Event</th><th>Lua Representation</th></tr></thead><tbody>
 <tr><td>Triple Left Down</td><td><code>event={Down={streak=3, button=&quot;Left&quot;}}</code></td></tr>
 <tr><td>Double Left Up</td><td><code>event={Up={streak=2, button=&quot;Left&quot;}}</code></td></tr>
 <tr><td>Single Left Drag</td><td><code>event={Drag={streak=1, button=&quot;Left&quot;}}</code></td></tr>
 </tbody></table>
+</div>
 <h1 id="gotcha-on-binding-an-up-event-only"><a class="header" href="#gotcha-on-binding-an-up-event-only">Gotcha on binding an 'Up' event only</a></h1>
 <p>If you only have a mouse bind on the 'Up' event and not on the 'Down' event,
 the 'Down' event will still be sent to the running program.
@@ -4917,7 +4924,7 @@ that region to the clipboard.</p>
 <h3 id="key-assignments"><a class="header" href="#key-assignments">Key Assignments</a></h3>
 <p>The key assignments in copy mode are as follows.  They are not currently
 reassignable.</p>
-<table><thead><tr><th>Action</th><th>Key Assignment</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Action</th><th>Key Assignment</th></tr></thead><tbody>
 <tr><td>Exit copy mode</td><td><code>Esc</code></td></tr>
 <tr><td></td><td><code>CTRL-C</code></td></tr>
 <tr><td></td><td><code>CTRL-g</code></td></tr>
@@ -4955,6 +4962,7 @@ reassignable.</p>
 <tr><td>Move down one screen</td><td><code>PageDown</code></td></tr>
 <tr><td></td><td><code>CTRL-f</code></td></tr>
 </tbody></table>
+</div>
 <h3 id="configurable-key-assignments"><a class="header" href="#configurable-key-assignments">Configurable Key Assignments</a></h3>
 <p><em>Since: nightly builds only</em></p>
 <p>The key assignments for copy mode are specified by the <code>copy_mode</code> <a href="config/key-tables.html">Key Table</a>.</p>
@@ -5520,7 +5528,7 @@ resolved.</p>
 <p>Codepoints in the range <code>0x00-0x1F</code> are considered to be <code>C0</code> control codes.
 <code>C0</code> controls will flush any buffered printable codepoints before triggering
 the action described below.</p>
-<table><thead><tr><th>Seq</th><th>Hex</th><th>Name</th><th>Description</th><th>Action</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Seq</th><th>Hex</th><th>Name</th><th>Description</th><th>Action</th></tr></thead><tbody>
 <tr><td>^@</td><td>0x00</td><td>NUL</td><td>Null</td><td>Ignored</td></tr>
 <tr><td>^A</td><td>0x01</td><td>SOH</td><td>Start of Heading</td><td>Ignored</td></tr>
 <tr><td>^B</td><td>0x02</td><td>STX</td><td>Start of Text</td><td>Ignored</td></tr>
@@ -5554,6 +5562,7 @@ the action described below.</p>
 <tr><td>^^</td><td>0x1E</td><td>RS</td><td>Record Separator</td><td>Ignored</td></tr>
 <tr><td>^_</td><td>0x1F</td><td>US</td><td>Unit Separator</td><td>Ignored</td></tr>
 </tbody></table>
+</div>
 <h3 id="c1-control-codes"><a class="header" href="#c1-control-codes">C1 Control Codes</a></h3>
 <p>As mentioned above, WezTerm only supports UTF-8 encoding.  C1 control codes
 have an 8-bit representation as well as a multi-codepoint 7-bit escape sequence.</p>
@@ -5565,7 +5574,7 @@ are passing through a UTF-8 decoder.</p>
 codepoint value, along with the corresponding meaning.</p>
 <p>As with <code>C0</code> control codes, <code>C1</code> controls will flush any buffered printable
 codepoints before triggering the action described below.</p>
-<table><thead><tr><th>Seq</th><th>Codepoint</th><th>Name</th><th>Description</th><th>Action</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Seq</th><th>Codepoint</th><th>Name</th><th>Description</th><th>Action</th></tr></thead><tbody>
 <tr><td>ESC D</td><td>0x84</td><td>IND</td><td>Index</td><td>Moves the cursor down one line in the same column. If the cursor is at the bottom margin, the page scrolls up</td></tr>
 <tr><td>ESC E</td><td>0x85</td><td>NEL</td><td>Next Line</td><td>Moves the cursor to the left margin on the next line. If the cursor is at the bottom margin, scroll the page up</td></tr>
 <tr><td>ESC H</td><td>0x88</td><td>HTS</td><td>Horizontal Tab Set</td><td>Sets a horizontal tab stop at the column where the cursor is</td></tr>
@@ -5574,11 +5583,12 @@ codepoints before triggering the action described below.</p>
 <tr><td>ESC [</td><td>0x9B</td><td>CSI</td><td>Control Sequence Introducer</td><td>Discussed below</td></tr>
 <tr><td>ESC \</td><td>0x9C</td><td>ST</td><td>String Terminator</td><td>No direct effect; ST is used to delimit the end of OSC style escape sequences</td></tr>
 </tbody></table>
+</div>
 <h3 id="other-escape-sequences"><a class="header" href="#other-escape-sequences">Other Escape Sequences</a></h3>
 <p>As these sequences start with an <code>ESC</code>, which is a <code>C0</code> control, these will
 flush any buffered printable codepoints before triggering the associated
 action.</p>
-<table><thead><tr><th>Seq</th><th>Name</th><th>Description</th><th>Action</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Seq</th><th>Name</th><th>Description</th><th>Action</th></tr></thead><tbody>
 <tr><td>ESC c</td><td><a href="https://vt100.net/docs/vt510-rm/RIS.html">RIS</a></td><td>Reset to Initial State</td><td>Resets tab stops, margins, modes, graphic rendition, palette, activates primary screen, erases the display and moves cursor to home position</td></tr>
 <tr><td>ESC 7</td><td><a href="https://vt100.net/docs/vt510-rm/DECSC.html">DECSC</a></td><td>Save Cursor Position</td><td>Records cursor position</td></tr>
 <tr><td>ESC 8</td><td><a href="https://vt100.net/docs/vt510-rm/DECRC.html">DECRC</a></td><td>Restored Saved Cursor Position</td><td>Moves cursor to location it had when DECSC was used</td></tr>
@@ -5588,6 +5598,7 @@ action.</p>
 <tr><td>ESC (B</td><td></td><td>US ASCII character set</td><td>Disables DEC Line Drawing character translation</td></tr>
 <tr><td>ESC #8</td><td><a href="https://vt100.net/docs/vt510-rm/DECALN.html">DECALN</a></td><td>Screen Alignment Display</td><td>Fills the display with <code>E</code> characters for diagnostic/test purposes (for vttest)</td></tr>
 </tbody></table>
+</div>
 <h3 id="csi---control-sequence-introducer-sequences"><a class="header" href="#csi---control-sequence-introducer-sequences">CSI - Control Sequence Introducer Sequences</a></h3>
 <p>CSI sequences begin with the <code>C1</code> <code>CSI</code> sequence, which is either the 7-bit
 <code>ESC [</code> sequence or the codepoint <code>0x9B</code>.</p>
@@ -5601,7 +5612,7 @@ context.</p>
 <p>The digits map to one of the codes in the table below, which manipulate the
 presentation attributes of subsequently printed characters.</p>
 <p>It is valid to omit the code number; for example <code>CSI m</code> is equivalent to <code>CSI 0 m</code> which resets the presentation attributes.</p>
-<table><thead><tr><th>Code</th><th>Description</th><th>Action</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Code</th><th>Description</th><th>Action</th></tr></thead><tbody>
 <tr><td>0</td><td>Reset</td><td>Reset to default foreground/background colors, reset all presentation attributes, clear any explicit hyperlinks</td></tr>
 <tr><td>1</td><td>IntensityBold</td><td>Set the intensity level to Bold.  This causes subsequent text to be rendered in a bold font variant and, if the foreground color is set to a palette index in the 0-7 range, effectively shifts it to the brighter value in the 8-15 range</td></tr>
 <tr><td>2</td><td>IntensityDim</td><td>Set the intensity level to Dim or Half-Bright.  This causes text to be rendered in a lighter weight font variant</td></tr>
@@ -5664,6 +5675,7 @@ presentation attributes of subsequently printed characters.</p>
 <tr><td>106</td><td>BackgroundBrightCyan</td><td>Sets the background color to Bright Cyan, which is palette index 14</td></tr>
 <tr><td>107</td><td>BackgroundBrightWhite</td><td>Sets the background color to Bright White, which is palette index 15</td></tr>
 </tbody></table>
+</div>
 <p>There are a handful of additional SGR codes that allow setting extended colors;
 unlike the codes above, which are activated by a single numeric parameter out
 of SGR sequence, these the extended color codes require multiple parameters.
@@ -5727,20 +5739,21 @@ DECSET 2026 is set to batch (hold) rendering until DECSET 2026 is reset to flush
 <h3 id="dcs---device-control-string"><a class="header" href="#dcs---device-control-string">DCS - Device Control String</a></h3>
 <p>The <code>C1</code> <code>DCS</code> escape places the terminal parser into a device control mode until the <code>C1</code> <code>ST</code> is encountered.</p>
 <p>In the table below, <code>DCS</code> can be either the 7-bit representation (<code>ESC P</code>) or the 8-bit codepoint (<code>0x90</code>).</p>
-<table><thead><tr><th>Seq</th><th>Name</th><th>Description</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Seq</th><th>Name</th><th>Description</th></tr></thead><tbody>
 <tr><td>DCS $ q &quot; p ST</td><td><a href="https://vt100.net/docs/vt510-rm/DECRQSS.html">DECRQSS</a> for <a href="https://vt100.net/docs/vt510-rm/DECSCL.html">DECSCL</a></td><td>Request Conformance Level; Reports the conformance level</td></tr>
 <tr><td>DCS $ q r ST</td><td><a href="https://vt100.net/docs/vt510-rm/DECRQSS.html">DECRQSS</a> for <a href="https://vt100.net/docs/vt510-rm/DECSTBM.html">DECSTBM</a></td><td>Request top and bottom margin report; Reports the margins</td></tr>
 <tr><td>DCS $ q s ST</td><td><a href="https://vt100.net/docs/vt510-rm/DECRQSS.html">DECRQSS</a> for <a href="https://vt100.net/docs/vt510-rm/DECSLRM.html">DECSLRM</a></td><td>Request left and right margin report; Reports the margins</td></tr>
 <tr><td>DCS [PARAMS] q [DATA] ST</td><td>Sixel Graphic Data</td><td>Decodes <a href="https://vt100.net/docs/vt3xx-gp/chapter14.html">Sixel graphic data</a> and apply the image to the terminal model. Support is preliminary and incomplete; see <a href="https://github.com/wez/wezterm/issues/217">this issue</a> for status.</td></tr>
 <tr><td>DCS 1000 q</td><td>tmux control mode</td><td>Bridges tmux into the WezTerm multiplexer.  Currently incomplete, see <a href="https://github.com/wez/wezterm/issues/336">this issue</a> for status.</td></tr>
 </tbody></table>
+</div>
 <h3 id="operating-system-command-sequences"><a class="header" href="#operating-system-command-sequences">Operating System Command Sequences</a></h3>
 <p>Operating System Command (OSC) sequences are introduced via <code>ESC ]</code> followed by
 a numeric code and typically have parameters delimited by <code>;</code>.  OSC sequences
 are canonically delimited by the <code>ST</code> (String Terminator) sequence, but WezTerm
 also accepts delimiting them with the <code>BEL</code> control.</p>
 <p>The table below is keyed by the OSC code.</p>
-<table><thead><tr><th>OSC</th><th>Description</th><th>Action</th><th>Example</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>OSC</th><th>Description</th><th>Action</th><th>Example</th></tr></thead><tbody>
 <tr><td>0</td><td>Set Icon Name and Window Title</td><td>Clears Icon Name, sets Window Title.</td><td><code>\x1b]0;title\x1b\\</code></td></tr>
 <tr><td>1</td><td>Set Icon Name</td><td>Sets Icon Name, which is used as the Tab title when it is non-empty</td><td><code>\x1b]1;tab-title\x1b\\</code></td></tr>
 <tr><td>2</td><td>Set Window Title</td><td>Set Window Title</td><td><code>\x1b]2;window-title\x1b\\</code></td></tr>
@@ -5762,6 +5775,7 @@ also accepts delimiting them with the <code>BEL</code> control.</p>
 <tr><td>L</td><td>Set Icon Name (Sun)</td><td>Same as OSC 1</td><td><code>\x1b]Ltab-title\x1b\\</code></td></tr>
 <tr><td>l</td><td>Set Window Title (Sun)</td><td>Same as OSC 2</td><td><code>\x1b]lwindow-title\x1b\\</code></td></tr>
 </tbody></table>
+</div>
 <h1 id="additional-resources"><a class="header" href="#additional-resources">Additional Resources</a></h1>
 <ul>
 <li><a href="http://invisible-island.net/xterm/ctlseqs/ctlseqs.txt">xterm's escape sequences</a></li>
@@ -6820,7 +6834,7 @@ end)
 This block generated by:
 cargo run --example gennerdfonts 2>/dev/null
 -->
-<table><thead><tr><th></th><th></th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th></th><th></th></tr></thead><tbody>
 <tr><td><span class="nf big"></span></td><td>custom_c</td></tr>
 <tr><td><span class="nf big"></span></td><td>custom_cpp</td></tr>
 <tr><td><span class="nf big"></span></td><td>custom_crystal</td></tr>
@@ -10650,7 +10664,7 @@ cargo run --example gennerdfonts 2>/dev/null
 <tr><td><span class="nf big"></span></td><td>weather_wind_west</td></tr>
 <tr><td><span class="nf big"></span></td><td>weather_windy</td></tr>
 </tbody></table>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="weztermonevent_name-callback"><a class="header" href="#weztermonevent_name-callback"><code>wezterm.on(event_name, callback)</code></a></h1>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="weztermonevent_name-callback"><a class="header" href="#weztermonevent_name-callback"><code>wezterm.on(event_name, callback)</code></a></h1>
 <p><em>Since: 20201031-154415-9614e117</em></p>
 <p>This function follows the html/javascript naming for defining event handlers.</p>
 <p><code>wezterm.on</code> causes your specified <code>callback</code> to be called when <code>event_name</code>
@@ -11461,7 +11475,7 @@ assignments.</p>
 <p>If bracketed paste mode is enabled by the application, the effective
 value of this configuration option is <code>&quot;None&quot;</code>.</p>
 <p>The following values are accepted:</p>
-<table><thead><tr><th>value</th><th>meaning</th><th>version</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>value</th><th>meaning</th><th>version</th></tr></thead><tbody>
 <tr><td><code>true</code></td><td>same as <code>&quot;CarriageReturnAndLineFeed&quot;</code></td><td><em>Since: 20211204-082213-a66c61ee9</em></td></tr>
 <tr><td><code>false</code></td><td>same as <code>&quot;None&quot;</code></td><td><em>Since: 20211204-082213-a66c61ee9</em></td></tr>
 <tr><td><code>&quot;None&quot;</code></td><td>The text is passed through unchanged</td><td><em>Since: 20220319-142410-0fcdea07</em></td></tr>
@@ -11469,15 +11483,17 @@ value of this configuration option is <code>&quot;None&quot;</code>.</p>
 <tr><td><code>&quot;CarriageReturn&quot;</code></td><td>Newlines of any style are rewritten as CR</td><td><em>Since: 20220319-142410-0fcdea07</em></td></tr>
 <tr><td><code>&quot;CarriageReturnAndLineFeed&quot;</code></td><td>Newlines of any style are rewritten as CRLF</td><td><em>Since: 20220319-142410-0fcdea07</em></td></tr>
 </tbody></table>
+</div>
 <p>Note that the string forms of these values are accepted in 20220319-142410-0fcdea07,
 however, <code>true</code> in all prior versions behaves the same way as
 <code>&quot;CarriageReturnAndLineFeed&quot;</code> behaves in the nightly build.</p>
 <p>The default value has changed in different versions of wezterm:</p>
-<table><thead><tr><th>version</th><th>platform</th><th>default</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>version</th><th>platform</th><th>default</th></tr></thead><tbody>
 <tr><td>20211204-082213-a66c61ee9</td><td>Windows</td><td><code>&quot;CarriageReturnAndLineFeed&quot;</code></td></tr>
 <tr><td>20211204-082213-a66c61ee9</td><td>NOT Windows</td><td><code>&quot;None&quot;</code></td></tr>
 <tr><td>20220319-142410-0fcdea07</td><td>NOT Windows</td><td><code>&quot;CarriageReturn&quot;</code></td></tr>
 </tbody></table>
+</div>
 <p>On Windows we're in a bit of a frustrating situation: pasting into
 Windows console programs requires CRLF otherwise there is no newline
 at all, but when in WSL, pasting with CRLF gives excess blank lines.</p>
@@ -11591,13 +11607,14 @@ relatively costly to keep re-rendering for the blink!</p>
 <p>When set to <code>true</code> (the default), WezTerm will compute its own idea of what the glyphs
 in the following unicode ranges should be, instead of using glyphs resolved from a font.</p>
 <p>Ideally this option wouldn't exist, but it is present to work around a <a href="https://gitlab.freedesktop.org/freetype/freetype/-/issues/761">hinting issue in freetype</a>.</p>
-<table><thead><tr><th>Block</th><th>What</th><th>Since</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Block</th><th>What</th><th>Since</th></tr></thead><tbody>
 <tr><td><a href="https://www.unicode.org/charts/PDF/U2580.pdf">U2500</a></td><td>Box Drawing</td><td><em>20210814-124438-54e29167</em></td></tr>
 <tr><td><a href="https://www.unicode.org/charts/PDF/U2580.pdf">U2580</a></td><td>unicode block elements</td><td><em>20210314-114017-04b7cedd</em></td></tr>
 <tr><td><a href="https://www.unicode.org/charts/PDF/U1FB00.pdf">U1FB00</a></td><td>Symbols for Legacy Computing (Sextants and Smooth mosaic graphics)</td><td><em>20210814-124438-54e29167</em></td></tr>
 <tr><td><a href="https://www.unicode.org/charts/PDF/U2800.pdf">U2800</a></td><td>Braille Patterns</td><td><em>20210814-124438-54e29167</em></td></tr>
 <tr><td><a href="https://github.com/ryanoasis/powerline-extra-symbols#glyphs">Powerline</a></td><td>Powerline triangle, curve and diagonal glyphs</td><td><em>20210814-124438-54e29167</em></td></tr>
 </tbody></table>
+</div>
 <p>You can set this to <code>false</code> to use the block characters provided by your font selection.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="daemon_options"><a class="header" href="#daemon_options"><code>daemon_options</code></a></h1>
 <p>Allows configuring the multiplexer (mux) server and how it places itself into
@@ -11793,7 +11810,7 @@ config specifies the total set of patterns used for <a href="config/lua/config/.
 either blurry or too small (especially if you are using a 4K display on X11 or
 Wayland).</p>
 <p>The default value is system specific:</p>
-<table><thead><tr><th>OS</th><th>Standard Density</th><th>High Density</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>OS</th><th>Standard Density</th><th>High Density</th></tr></thead><tbody>
 <tr><td>macOS</td><td>72.0</td><td>144.0</td></tr>
 <tr><td>Windows</td><td>Probed from the display</td><td>Probed from the display</td></tr>
 <tr><td>X11</td><td>96.0</td><td>96.0</td></tr>
@@ -11801,6 +11818,7 @@ Wayland).</p>
 <tr><td>X11 (<em>version 20210814-124438-54e29167 and later</em>)</td><td>Reads <code>Xft/DPI</code> via xsettings, fallback to <code>Xft.dpi</code>, then fallback to 96.0</td><td>same as standard density</td></tr>
 <tr><td>Wayland</td><td>96.0</td><td>192.0</td></tr>
 </tbody></table>
+</div>
 <p>In macOS and Wayland environments there isn't strictly a system DPI value that
 can be queried; instead standard density has a fixed value and the system will
 inform WezTerm when the display is high density by communicating a scaling
@@ -12372,12 +12390,13 @@ on an inactive pane to activate it.</p>
 ways to access the GPU.</p>
 <p>This option controls whether wezterm should attempt to use
 <a href="https://en.wikipedia.org/wiki/EGL_%28API%29">EGL</a> to configure the GPU.</p>
-<table><thead><tr><th>Environment</th><th>prefer_egl=true</th><th>prefer_egl=false</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Environment</th><th>prefer_egl=true</th><th>prefer_egl=false</th></tr></thead><tbody>
 <tr><td>Wayland</td><td>use wayland-egl</td><td>No effect: EGL is the only way to use the GPU</td></tr>
 <tr><td>X11</td><td>Use libEGL.so</td><td>No effect: EGL is the only way to use the GPU</td></tr>
 <tr><td>macOS</td><td>Use <a href="https://github.com/kakashidinho/metalangle">MetalANGLE</a> libEGL.dylib if installed alongside the <code>wezterm-gui</code> executable.  Some versions of wezterm shipped with this configuration which translated OpenGL calls to <a href="https://en.wikipedia.org/wiki/Metal_%28API%29">Metal</a></td><td>Use Core OpenGL API (CGL).  Since BigSur, CGL uses Metal APIs.</td></tr>
 <tr><td>Windows</td><td>Use <a href="https://chromium.googlesource.com/angle/angle">ANGLE</a> to translate OpenGL calls to Direct3D, which makes wezterm more robust if you upgrade your graphics card drivers.</td><td>Use the OpenGL implementation provided by your graphics card vendor</td></tr>
 </tbody></table>
+</div>
 <p>The default is <code>true</code>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="quick_select_alphabet"><a class="header" href="#quick_select_alphabet">quick_select_alphabet</a></h1>
 <p><em>Since: 20210502-130208-bff6815d</em></p>
@@ -12387,14 +12406,14 @@ matched in <a href="config/lua/config/../../../quickselect.html">quick select mo
 means that the first matching item from the bottom is labelled
 with an <code>a</code>, the second with <code>s</code> and so forth; these are easily
 accessible characters in a <code>qwerty</code> keyboard layout.</p>
-<table><thead><tr><th>Keyboard Layout</th><th>Suggested Alphabet</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Keyboard Layout</th><th>Suggested Alphabet</th></tr></thead><tbody>
 <tr><td><code>qwerty</code></td><td><code>&quot;asdfqwerzxcvjklmiuopghtybn&quot;</code> (this is the default)</td></tr>
 <tr><td><code>qwertz</code></td><td><code>&quot;asdfqweryxcvjkluiopmghtzbn&quot;</code></td></tr>
 <tr><td><code>azerty</code></td><td><code>&quot;qsdfazerwxcvjklmuiopghtybn&quot;</code></td></tr>
 <tr><td><code>dvorak</code></td><td><code>&quot;aoeuqjkxpyhtnsgcrlmwvzfidb&quot;</code></td></tr>
 <tr><td><code>colemak</code></td><td><code>&quot;arstqwfpzxcvneioluymdhgjbk&quot;</code></td></tr>
 </tbody></table>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="quick_select_patterns"><a class="header" href="#quick_select_patterns">quick_select_patterns</a></h1>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="quick_select_patterns"><a class="header" href="#quick_select_patterns">quick_select_patterns</a></h1>
 <p><em>Since: 20210502-130208-bff6815d</em></p>
 <p>Specify additional patterns to match when in <a href="config/lua/config/../../../quickselect.html">quick select mode</a>.
 This setting is a table listing out a set of regular expressions.</p>
@@ -12418,21 +12437,22 @@ There are five possible values:</p>
 <li><code>&quot;WindowsAlwaysQuoted&quot;</code> - like <code>&quot;Windows&quot;</code>, while always double-quote the filename.</li>
 </ul>
 <p>For example:</p>
-<table><thead><tr><th><code>quote_dropped_files</code></th><th>file name</th><th>quoted result</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th><code>quote_dropped_files</code></th><th>file name</th><th>quoted result</th></tr></thead><tbody>
 <tr><td><code>&quot;None&quot;</code></td><td><code>hello ($world)</code></td><td><code>hello ($world)</code></td></tr>
 <tr><td><code>&quot;SpacesOnly&quot;</code></td><td><code>hello ($world)</code></td><td><code>hello\ ($world)</code></td></tr>
 <tr><td><code>&quot;Posix&quot;</code></td><td><code>hello ($world)</code></td><td><code>&quot;hello (\$world)&quot;</code></td></tr>
 <tr><td><code>&quot;Windows&quot;</code></td><td><code>hello ($world)</code></td><td><code>&quot;hello ($world)&quot;</code></td></tr>
 <tr><td><code>&quot;WindowsAlwaysQuoted&quot;</code></td><td><code>hello ($world)</code></td><td><code>&quot;hello ($world)&quot;</code></td></tr>
 </tbody></table>
+</div>
 <p>Drag and drop support for files is a platform dependent feature</p>
-<table><thead><tr><th>Platform</th><th>Supported since</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Platform</th><th>Supported since</th></tr></thead><tbody>
 <tr><td>macOS</td><td>nightly builds only</td></tr>
 <tr><td>Windows</td><td>nightly builds only</td></tr>
 <tr><td>X11</td><td>Not yet</td></tr>
 <tr><td>Wayland</td><td>Not yet</td></tr>
 </tbody></table>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="scroll_to_bottom_on_input"><a class="header" href="#scroll_to_bottom_on_input"><code>scroll_to_bottom_on_input</code></a></h1>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="scroll_to_bottom_on_input"><a class="header" href="#scroll_to_bottom_on_input"><code>scroll_to_bottom_on_input</code></a></h1>
 <p>When <code>true</code> (the default), the viewport will automatically scroll to the
 bottom of the scrollback when there is input to the terminal so that you
 can see what you are typing.</p>
@@ -12767,11 +12787,12 @@ or text in shells or text editors.</p>
 widely used version (from the perspective of width) at the time of writing,
 which means that the default experience has the lowest chance of mismatched
 expectations.</p>
-<table><thead><tr><th>Unicode Version</th><th>Impact</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Unicode Version</th><th>Impact</th></tr></thead><tbody>
 <tr><td>8 (or lower)</td><td>Some characters will be narrower than later versions</td></tr>
 <tr><td>9-13</td><td>Some characters will be wider than in Unicode 8</td></tr>
 <tr><td>14 (or higher)</td><td>Explicit Emoji or Text presentation selectors will be respected and make some characters wider or narrower than earlier versions, depending on the context</td></tr>
 </tbody></table>
+</div>
 <p>If you aggressively maintain all of your software to the latest possible
 versions then you may wish to set <code>unicode_version = 14</code> to match the current
 (at the time of writing) version of Unicode.  This will enable Emoji
@@ -12846,12 +12867,13 @@ aesthetic using the main terminal font.</p>
 input.  The IME is useful for inputting kanji or other text that is not
 natively supported by the attached keyboard hardware.</p>
 <p>IME support is a platform dependent feature</p>
-<table><thead><tr><th>Platform</th><th>Supported since</th><th>Notes</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Platform</th><th>Supported since</th><th>Notes</th></tr></thead><tbody>
 <tr><td>Windows</td><td>Forever</td><td>Always enabled, cannot be disabled</td></tr>
 <tr><td>macOS</td><td>20200113-214446-bb6251f</td><td>defaults to enabled starting in 20220319-142410-0fcdea07. Earlier versions had problems with key repeat when enabled</td></tr>
 <tr><td>X11</td><td>20211204-082213-a66c61ee9</td><td><a href="https://en.wikipedia.org/wiki/X_Input_Method">XIM</a> based. Your system needs to have a running input method engine (such as ibus or fcitx) that support the XIM protocol in order for wezterm to use it.</td></tr>
 <tr><td>Wayland</td><td>Not yet</td><td><a href="https://github.com/wez/wezterm/issues/1772">#1772</a> is tracking IME support</td></tr>
 </tbody></table>
+</div>
 <p>You can control whether the IME is enabled in your configuration file:</p>
 <pre><code class="language-lua">return {
   use_ime = false,
@@ -13026,7 +13048,7 @@ subsequently stretched to fill the dimensions of the window.</p>
 <img src="config/lua/config/../../../screenshots/radial-gradient.png">
 <h2 id="presets"><a class="header" href="#presets">Presets</a></h2>
 <p>The following presets are available:</p>
-<table><thead><tr><th>Preset</th><th>Gradient</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>Preset</th><th>Gradient</th></tr></thead><tbody>
 <tr><td>Blues</td><td><img src="https://github.com/mazznoer/colorgrad-rs/raw/master/docs/images/preset/blues.png"></td></tr>
 <tr><td>BrBg</td><td><img src="https://github.com/mazznoer/colorgrad-rs/raw/master/docs/images/preset/br_bg.png"></td></tr>
 <tr><td>BuGn</td><td><img src="https://github.com/mazznoer/colorgrad-rs/raw/master/docs/images/preset/bu_gn.png"></td></tr>
@@ -13066,7 +13088,7 @@ subsequently stretched to fill the dimensions of the window.</p>
 <tr><td>YlOrBr</td><td><img src="https://github.com/mazznoer/colorgrad-rs/raw/master/docs/images/preset/yl_or_br.png"></td></tr>
 <tr><td>YlOrRd</td><td><img src="https://github.com/mazznoer/colorgrad-rs/raw/master/docs/images/preset/yl_or_rd.png"></td></tr>
 </tbody></table>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="window_close_confirmation"><a class="header" href="#window_close_confirmation"><code>window_close_confirmation</code></a></h1>
+</div><div style="break-before: page; page-break-before: always;"></div><h1 id="window_close_confirmation"><a class="header" href="#window_close_confirmation"><code>window_close_confirmation</code></a></h1>
 <p>Whether to display a confirmation prompt when the window is closed by the
 windowing environment, either because the user closed it with the window
 decorations, or instructed their window manager to close it.</p>
@@ -14866,11 +14888,12 @@ then wezterm will:</p>
 </ul>
 <p>With the process identified, wezterm will then try to determine the current
 working directory using operating system dependent code:</p>
-<table><thead><tr><th>OS</th><th>Supported?</th></tr></thead><tbody>
+<div class="table-wrapper"><table><thead><tr><th>OS</th><th>Supported?</th></tr></thead><tbody>
 <tr><td>macOS</td><td>Yes, <em>Since: 20201031-154415-9614e117</em></td></tr>
 <tr><td>Linux</td><td>Yes, <em>Since: 20201031-154415-9614e117</em></td></tr>
 <tr><td>Windows</td><td>Yes, <em>Since: 20220101-133340-7edc5b5a</em></td></tr>
 </tbody></table>
+</div>
 <p>If the current working directory is not known then this method returns <code>nil</code>.
 Otherwise, it returns the current working directory as a URI string.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="paneget_cursor_position"><a class="header" href="#paneget_cursor_position"><code>pane:get_cursor_position()</code></a></h1>
