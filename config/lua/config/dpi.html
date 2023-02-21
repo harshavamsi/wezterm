@@ -4,10 +4,8 @@
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
         <title>dpi - Wez&#x27;s Terminal Emulator</title>
-
-
         <!-- Custom HTML head -->
-        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff" />
@@ -18,11 +16,9 @@
         <link rel="stylesheet" href="../../../css/general.css">
         <link rel="stylesheet" href="../../../css/chrome.css">
         <link rel="stylesheet" href="../../../css/print.css" media="print">
-
         <!-- Fonts -->
         <link rel="stylesheet" href="../../../FontAwesome/css/font-awesome.css">
         <link rel="stylesheet" href="../../../fonts/fonts.css">
-
         <!-- Highlight.js Stylesheets -->
         <link rel="stylesheet" href="../../../highlight.css">
         <link rel="stylesheet" href="../../../tomorrow-night.css">
@@ -30,18 +26,16 @@
 
         <!-- Custom theme stylesheets -->
         <link rel="stylesheet" href="../../../custom.css">
-
     </head>
     <body>
-    <div id="body-container">
         <!-- Provide site root to javascript -->
-        <script>
+        <script type="text/javascript">
             var path_to_root = "../../../";
             var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "ayu" : "ayu";
         </script>
 
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
-        <script>
+        <script type="text/javascript">
             try {
                 var theme = localStorage.getItem('mdbook-theme');
                 var sidebar = localStorage.getItem('mdbook-sidebar');
@@ -57,7 +51,7 @@
         </script>
 
         <!-- Set the theme before any content is loaded, prevents flash -->
-        <script>
+        <script type="text/javascript">
             var theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
@@ -69,7 +63,7 @@
         </script>
 
         <!-- Hide / unhide sidebar before it is displayed -->
-        <script>
+        <script type="text/javascript">
             var html = document.querySelector('html');
             var sidebar = 'hidden';
             if (document.body.clientWidth >= 1080) {
@@ -90,7 +84,7 @@
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky bordered">
                     <div class="left-buttons">
                         <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -104,7 +98,7 @@
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu (default)</button></li>
                         </ul>
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
@@ -120,7 +114,6 @@
                         <a href="https://github.com/wez/wezterm" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
-
                     </div>
                 </div>
 
@@ -134,9 +127,8 @@
                         </ul>
                     </div>
                 </div>
-
                 <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
-                <script>
+                <script type="text/javascript">
                     document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
                     document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
                     Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
@@ -188,11 +180,9 @@ multi-monitor setup where the monitors have varying DPIs.</p>
                             <a rel="prev" href="../../../config/lua/config/disable_default_quick_select_patterns.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
-
                             <a rel="next" href="../../../config/lua/config/enable_csi_u_key_encoding.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
-
                         <div style="clear: both"></div>
                     </nav>
                 </div>
@@ -202,7 +192,6 @@ multi-monitor setup where the monitors have varying DPIs.</p>
                     <a rel="prev" href="../../../config/lua/config/disable_default_quick_select_patterns.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
-
                     <a rel="next" href="../../../config/lua/config/enable_csi_u_key_encoding.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
@@ -210,27 +199,18 @@ multi-monitor setup where the monitors have varying DPIs.</p>
 
         </div>
 
-
-
-
-        <script>
+        <script type="text/javascript">
             window.playground_copyable = true;
         </script>
-
-
-        <script src="../../../elasticlunr.min.js"></script>
-        <script src="../../../mark.min.js"></script>
-        <script src="../../../searcher.js"></script>
-
-        <script src="../../../clipboard.min.js"></script>
-        <script src="../../../highlight.js"></script>
-        <script src="../../../book.js"></script>
+        <script src="../../../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../searcher.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../../../book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        <script src="../../../mermaid.min.js"></script>
-        <script src="../../../mermaid-init.js"></script>
-
-
-    </div>
+        <script type="text/javascript" src="../../../mermaid.min.js"></script>
+        <script type="text/javascript" src="../../../mermaid-init.js"></script>
     </body>
 </html>
